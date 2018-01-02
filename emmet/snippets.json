@@ -1,0 +1,33 @@
+{
+  "snippets":
+  {
+    "variables":
+    {
+      "lang": "en",
+      "locale": "en-US",
+      "charset": "utf-8",
+      "indentation": "\t",
+      "newline": "\n"
+    },
+    "html":
+    {
+      "snippets":
+      {
+        "!!!": "<!DOCTYPE html>",
+        "domloaded": "document.addEventListener('DOMContentLoaded',function(){});",
+      },
+      "abbreviations":
+      {
+        "example": "<div class='example' title='Custom element example'>",
+        "!": "html:5",
+        "script": "<script !src=\"\">",
+        "script:src": "<script src=\"\">",
+        "script:inner": "script>${3:domloaded}",
+        "meta": "<meta/>",
+        "meta:vp": "<meta name=\"viewport\" content=\"width=${1:device-width}, initial-scale=${3:1.0}, maximum-scale=${3:1.0}, minimum-scale=${3:1.0}, userscalable=no, viewport-fit=cover\" />",
+        "doc": "html>(head>meta[charset=${charset}]+meta:vp+title{${1:Document}})+body>script",
+        "html:5": "!!!+doc",
+      }
+    }
+  }
+}
